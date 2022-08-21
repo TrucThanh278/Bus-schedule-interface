@@ -1,0 +1,671 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, div, p, span {
+    font-family: SFProText;
+}
+
+/* common */
+.col{
+    height: 34px;
+}
+
+.row{
+    max-width: 936px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.header{
+    color: #fff;
+    background-color: #00613c;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header--contact{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.header--phone, .header--email, .header--right{
+    display: inline-block;
+}
+
+.facebook_icon{
+    padding: 0 10px;
+}
+
+.header--right{
+    padding: 0 10px;
+}
+
+.header--phone{
+    margin-right: 20px;
+}
+
+.header--left {
+    font-weight: 500;
+}
+
+.header--right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__sc--btn{
+    margin-left: 25px;
+    font-size: large;
+}
+
+.header--social a{
+    text-decoration: none;
+}
+
+.header--social{
+    font-size: 15px;
+    display: flex;
+    margin-right: 20px;
+}
+
+.header--social .fa-facebook {
+    color: white;
+}
+
+.header__sc{
+    font-size:20px;
+    padding: 1px 5px;
+    border-radius: 50%;
+    color: #3b5998;
+    background-color: #fff;
+}
+
+.header--right button{
+    height: 27px;
+    border-radius: 5px;
+    align-items: center;
+    padding: 13px 15px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ec2029;
+    color: #fff;
+    border-style: none;
+}
+
+.header--submit{
+    display: flex;
+}
+
+.submit-icon{
+    border: 3px solid white;
+    background-color: #fff;
+    border-radius: 50%;
+    color: red;
+    margin-right: 10px;
+}
+
+.nav{
+    display: flex;
+    height: 48px;
+}
+
+.header--nav li {
+    display: block;
+}
+
+.header--nav i:hover {
+    background-color: #ef5222;
+    cursor: pointer;
+    color: white;
+}
+.header--nav .nav-menu{
+    display: none;
+}
+
+.nav .logo{
+    max-width: 20%;
+    margin-right: 10px;
+}
+
+.header--nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.header--nav li{
+    list-style-type: none;
+}
+
+.header--nav li a{
+    text-decoration: none;
+    font-size: max(1vw,13px);
+    text-transform: uppercase;
+    color: #656665;
+    font-weight: 600;
+}
+
+.header--nav li:hover a{
+    color: #ef5222;
+    transition: 0.5s;
+}
+
+.slider{
+    width: 100vw;
+}
+
+.slider .logo{
+    width: 100%;
+}
+
+
+/* Content */
+.slider1,.slider1 .logo{
+    width: 100%;
+}
+
+.slider2,.slider2 .logo{
+    width: 100%;
+}
+
+.calendar .choosen{
+    padding:  20px;
+    display: flex;
+    font-size: 14px;
+    color: #333;
+}
+
+.choosen .choosen_check{
+    padding-right: 20px;
+}
+
+.choosen_check p{
+    display: inline-block;
+    font-weight: bold;
+}
+
+.choosen_check input{
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #ef5222;
+    padding: 9px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.choosen_check input:active, .choosen_check input:checked:active{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.choosen_check input:checked{
+    background-color: transparent;
+	border: 1px solid #e95c15;
+}
+
+.choosen_check input:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #e95c15;
+}
+
+.location_time{
+    display: flex;
+    justify-content: space-between;
+}
+
+.location{
+    display: flex;
+}
+
+.time{
+    display: flex;
+}
+
+.location_from, .location_to, .time_goto, .time_goback{
+    padding: 10px 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: solid 1px #dce1e6;
+    border-radius: 6px;
+}
+
+.location_from-title, .location_to-title, .time_goto-title, .time_goback-title{
+    margin-bottom: 4px;
+}
+
+.location_from-text, .location_to-text, .time_goto-text, .time_goback-text{
+    text-align: center;
+    padding: 4px;
+    color: #111;
+    border: none;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.location_from-text:focus, .location_to-text:focus, .time_goto-text:focus, .time_goback-text:focus{
+    outline-color: #80bcec;
+}
+
+.img_between{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: transform .3s;
+    margin: 15px -10px 10px;
+    z-index: 1;
+}
+
+.img_between:hover{
+    transform: rotate(180deg);
+}
+
+.tour_pop{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    width: inherit;
+    margin-bottom: 10px;
+    color: #f15a24;
+    text-transform: uppercase;
+}
+
+.tour_items{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tour_item{
+    display: flex;
+    background-color: #fff;
+    height: 76px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,97,61,.2);
+    margin-bottom: 23px;
+    transition: transform .4s ease 0s;
+}
+
+.logo_place_item{
+    width: 160px;
+    height: 100%;
+}
+
+.logo_place_item img{
+    object-fit: cover;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.tour{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tour_location{
+    width: 100%;
+    padding: 0px 15px;
+}
+
+.tour_info{
+    display: flex;
+    justify-content: space-around;
+    color: #00613d;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tour_desc{
+    display: flex;
+    justify-content: space-between;
+    color: #637280;
+    font-size: 15px;
+}
+
+.tour_item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.slogan{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    max-width: 100vw;
+    white-space: nowrap;
+}
+
+.slogan_title, .famous_tours-title h2{
+    text-transform: uppercase;
+    font-size: min(5vw,40px);
+    color: #f15a24;
+}
+
+.slogan::after, .slogan::before{
+    background-color: #f15925;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 90%;
+    margin: auto 15px;
+}
+
+.featured_list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.featured_title{
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: #f15a24;
+    font-weight: bold;
+}
+
+.featured_desc{
+    font-size: 13px;
+    color: #637280;
+    padding-left: 67px;
+}
+
+.featured_subtitle{
+    margin-bottom: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #00613d;
+}
+
+.slider-wrapper{
+    width: 100%;
+    overflow: hidden;
+    position: relative; 
+}
+
+.slider-main{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.famous_tours-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slick-list{
+    padding: 100px 20px !important;
+}
+
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    padding: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1;
+    z-index: 5;
+    transition: all 0.2s linear;
+  }
+.slick-arrow:hover {
+background-color: #2cccff;
+color: white;
+}
+.slick-prev {
+left: 25%;
+}
+.slick-next {
+right: 25%;
+}
+
+.slick-center {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.famous_tours-title{
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* .famous_tours-title h2{
+    font-weight: 700;
+    font-size: min(5vw,30px);
+    letter-spacing: 4.09px;
+    color: #ef5222;
+    text-transform: uppercase;
+} */
+
+.famous_tour-item{
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: transform .4s ease 0s;
+}
+
+/* .famous_tour-item:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+} */
+
+.famous_tour-item img{
+    background-color: transparent;
+    height: 300px;
+    object-fit: cover;
+    max-width: 100%;
+    border: 0px solid transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 50px -6px rgb(62, 56, 56);
+}
+
+.famous_tour-item p{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #dce1e6;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 4px 4px 10px gray;
+}
+
+
+/* Footer */
+
+
+.footer {
+    border-top: 0.5px solid hsla(0,0%,59.2%,.5);
+    background-color: #f6f6f6;
+}
+
+.footer-one {
+    padding: 24px 0px;
+}
+
+.containers-one {
+    padding: 24px 16px;
+    width: 60%;
+}
+
+.container-one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-hotline p {
+    font-size: 14px;
+    color: #637280;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.container-one h1 a{
+    text-decoration: none;
+    color: #f15a24;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.container-one h1 a:hover {
+    color: #d88c75;
+}
+
+
+
+.container-one a{
+    margin-top: 16px;
+}
+
+.container-one a img {
+    width: 128px;
+    height: 48px;
+}
+
+.container-two {
+    color: #637280;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.container-two p a {
+    text-decoration: none;
+    color: #f15a24;
+}
+
+.container-three {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-three p {
+    color: #f15a24;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.container-three a {
+    text-decoration: none;
+}
+
+.container-three .facebook i {
+    color: #1877f2;
+    margin-right: 10px;
+}
+
+.container-three .youtube i {
+    color: #f00
+}
+
+.container-downloadApp .apple button {
+    color: white;
+    background-color: #000;
+    margin-right: 8px;
+    padding: 6px 10px;
+    border-radius: 14px;
+    border: 1px solid black;
+}
+
+.container-downloadApp .chplay button {
+    color: white;
+    background-color: #4cb508;
+    margin-right: 8px;
+    padding: 6px 10px;
+    border-radius: 14px;
+    border: 1px solid #4cb508;
+}
+
+.containers-two {
+    padding: 0px 16px;
+    width: 60%;
+}
+
+.containers-two p {
+    color: #f15a24;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.about-list {
+    display: flex;
+}
+
+.about-list1 {
+    margin-right: 10px;
+}
+
+.about-list1 div {
+    margin-bottom: 16px;
+}
+
+.about-list1 div a {
+    text-decoration: none;
+    color: #637280;
+}
+
+.about-list2 div {
+    margin-bottom: 16px;
+}
+
+.about-list2 div a {
+    text-decoration: none;
+    color: #637280;
+}
+
+.footer-two {
+    display: flex;
+}
+
+.footer-two div {
+    padding-right: 15px;
+}
+
+.footer-two img {
+    width:100%
+}
+
+.footer-three {
+    border-top: 1px solid rgba(81, 79, 79, 0.5);
+    color: #637280;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer-three p{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
