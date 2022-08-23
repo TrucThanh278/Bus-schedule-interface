@@ -2,31 +2,6 @@ window.addEventListener('load', function(){
   var location = document.getElementById('imgslider')
   location.classList.add('animate__backInRight')
 })
-// var index=0;
-// setInterval(function(){
-//     var images= [
-//         "./assets/img/043236ca-e573-4e92-be7b-643415e2f29a-1654315268780.jpg",
-//         "./assets/img/7e23df35-ddc5-49ca-9c63-81846f668c93-1655350938732.jpg",
-//         "./assets/img/c4345ce1-dc51-410c-9cc3-9e49b1381836-1654911502854.png"
-//     ];
-//     document.getElementById('img').src=images[index];
-//     index++;
-//     if(index==2){
-//         index=0;
-//     }
-// }, 3000)
-
-// document.addEventListener('scroll', () => {
-// 	var scroll_position = window.scrollY;
-//   var header_fix = document.getElementById('nav')
-// 	if (scroll_position > 91) {
-// 		// header.style.transitionProperty = 'color';
-//     header_fix.classList.add('fixed');
-// 	} else {
-//     header_fix.classList.remove('fixed');
-// 	}
-// });
-
 var evenitems = document.querySelectorAll('.tour_list .tour_items:nth-child(even)')
 var odditems = document.querySelectorAll('.tour_list .tour_items:nth-child(odd)')
 document.addEventListener('scroll', () => {
@@ -50,18 +25,14 @@ if (scroll_position > 91)  {
     }
 });
 
-// $('.famous_tours-list').slick({
-//   slidesToShow: 1,
-//   autoplay: false,
-//   autoplaySpeed: 2000,
-//   prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-//   nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
-// });
-
 $('.famous_tours-list').slick({
   centerMode: true,
   centerPadding: '60px',
   slidesToShow: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+  nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
   responsive: [
     {
       breakpoint: 768,
