@@ -66,42 +66,17 @@
         font-size: 20px;
     }
 
+
     .featured_item{
         padding: 20px 0;
     }
-
-    .famous_tour-item .desc{
-        width: 100%;
-        margin: 0 0 0 30px;
-    }
-    
-    .famous_tour-item{
-        /* max-width: 960px; */
-        display: block !important;
-    }
-
-    .famous_tour-item .img{
-        display: flex;
-        justify-content: center;
-        /* -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%; */
-    }
-    
-
 }
 
 
 @media ( max-width: 740px ) {
-    .header{
-        display: none;
-    }
-
     .header--nav {
         display: block !important;
         overflow: hidden;
-        width: 100%;
     }
 
     .header--nav li {
@@ -123,11 +98,6 @@
     .header--nav li:first-child{
         display: flex;
         justify-content:space-between ;
-    }
-
-    .nav{
-        height: 48px;
-        top: 0;
     }
 
     .nav .logo {
@@ -161,7 +131,7 @@
     }
 
     .tour_items{
-        display: block !important;
+        display: block;
     }
 
     .col-second{
@@ -198,71 +168,5 @@
 
     .featured_item{
         padding: 20px 0;
-    }
-
-    .famous_tour-item{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container-row{
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-    }
-
-    .container-row-item{
-        display: flex;
-    }
-
-    .famous_tour-item img{
-        max-height: 80%;
-    }
-
-    /* .famous_tour-item{
-        max-width: 720px;
-    }
-
-    .famous_tour-item img{
-        
-    } */
-
-
-    .slick-next ,.slick-prev{
-        display: none !important;
-    }
-
-    .container-row{
-        display: flex;
-    }
-
-    .container-row-item{
-        width: 100%;
-        justify-content: center;
-        margin-bottom: 70px;
-    }
-
-    .famous_tours-list {
-        min-height: auto;
-    }
-
-    .famous_tour-item .desc {
-        width: 100%;
-    }
-
-    .famous_tour-item .desc p {
-        margin-right: 0;
-        font-size: 16px;
-        margin-bottom: 5px;
-    }
-
-    .famous_tour-item img {
-        width: 100%;
-        height: 0%;
-    }
-
-    .famous_tour-item .sub_title {
-        text-transform: none;
     }
 }
