@@ -25,8 +25,8 @@ body, div, p, span {
 
 .header{
     color: #fff;
-    background-color: #59ca6d;
-    font-size: 20px;
+    background: linear-gradient(-45deg, #1c8971, #029158, #23d558, #23d5ab);
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -97,7 +97,8 @@ body, div, p, span {
     padding: 13px 15px;
     display: flex;
     justify-content: space-evenly;
-    background-color: #ec2029;
+    background-color: #FFAB60
+    ;
     color: #fff;
     border-style: none;
 }
@@ -110,7 +111,7 @@ body, div, p, span {
     border: 3px solid white;
     background-color: #fff;
     border-radius: 50%;
-    color: red;
+    color: #FFAB60;
     margin-right: 10px;
 }
 
