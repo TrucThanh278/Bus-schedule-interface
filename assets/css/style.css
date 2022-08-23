@@ -10,7 +10,7 @@ body, div, p, span {
 
 /* common */
 .col{
-    height: 34px;
+    height: 48px;
 }
 
 .row{
@@ -25,8 +25,8 @@ body, div, p, span {
 
 .header{
     color: #fff;
-    background-color: #00613c;
-    font-size: 14px;
+    background-color: #59ca6d;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -114,9 +114,27 @@ body, div, p, span {
     margin-right: 10px;
 }
 
-.nav{
+#bignav{
+    background-color: transparent;
+    width: 100vw;
     display: flex;
-    height: 48px;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+/* Nav */
+
+.nav{
+    position: absolute;
+    top: 9%;
+    right: 0;
+    left: 0;
+    display: flex;
+    height: 90px;
+    z-index: 100;
+    color: #fff;
+    background-color: inherit;
+    justify-content: center;
 }
 
 .header--nav li {
@@ -138,7 +156,8 @@ body, div, p, span {
 }
 
 .header--nav{
-    width: 100%;
+    position: relative;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -153,7 +172,7 @@ body, div, p, span {
     text-decoration: none;
     font-size: max(1vw,13px);
     text-transform: uppercase;
-    color: #656665;
+    color: inherit;
     font-weight: 600;
 }
 
@@ -162,22 +181,29 @@ body, div, p, span {
     transition: 0.5s;
 }
 
-.slider{
-    width: 100vw;
-}
-
-.slider .logo{
-    width: 100%;
-}
-
-
 /* Content */
 .slider1,.slider1 .logo{
     width: 100%;
 }
 
-.slider2,.slider2 .logo{
-    width: 100%;
+.back-ground-page1{
+    background-image: url(/assets/img/bg-left.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    left: 0;
+    width: 50%;
+}
+.back-ground-page2{
+    background-image: url("/assets/img/bg-left.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    right: 0;
+    width: 50%;
+    transform: rotate(180deg);
 }
 
 .calendar .choosen{
@@ -286,12 +312,14 @@ body, div, p, span {
 }
 
 .tour_items{
-    display: flex;
+    display: none;
     justify-content: space-around;
 }
 
 .tour_item{
+    width: 438px;
     display: flex;
+    justify-content: space-between;
     background-color: #fff;
     height: 76px;
     border-radius: 8px;
@@ -313,6 +341,7 @@ body, div, p, span {
 }
 
 .tour{
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -346,6 +375,10 @@ body, div, p, span {
 
 /* Dịch Vụ */
 
+.container{
+    margin: 95px auto;
+}
+
 .container-title {
     max-width: 60%;
     margin: auto;
@@ -354,10 +387,12 @@ body, div, p, span {
 
 .container-title span {
     color: #59ca6d;
-    font-size: 16px;
+    font-size: 45px;
+    font-weight: bold;
     text-transform: uppercase;
     display: block;
     text-align: center;
+    letter-spacing: 1.5;
 }
 
 .container-title h3 {
@@ -402,17 +437,14 @@ body, div, p, span {
     background-color: #59ca6d;
     border-radius: 50%;
     position: relative;
+    display: flex;
     top: -37.5px;
+    justify-content: center;
+    align-items: center;
 }
 
-.box-icon img {
-    max-height: 55px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
+.box-icon i {
+    font-size: 30px;
 }
 
 .item-box:hover {
@@ -437,16 +469,6 @@ body, div, p, span {
     min-height: 95px;
 }
 
-.item-box a {
-    display: inline-block;
-    margin-top: 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 13px;
-    color: #59ca6d;
-    text-decoration: none;
-}
-
 /* end-Dịch Vụ */
 
 .famous_tours-title h2{
@@ -469,17 +491,13 @@ body, div, p, span {
 }
 
 .famous_tours-list{
-    width: 100%;
+    /* width: 100%;
     display: flex;
-    align-items: center;
+    align-items: center; */
 }
 
 .famous_tours-title p {
     color: #777;
-}
-
-.slick-list{
-    padding: 100px 20px !important;
 }
 
 .slick-arrow{
@@ -499,74 +517,23 @@ body, div, p, span {
     z-index: 5;
     transition: all 0.2s linear;
   }
-.slick-arrow:hover {
-background-color: #2cccff;
-color: white;
-}
-.slick-prev {
-left: 25%;
-}
-.slick-next {
-right: 25%;
-}
-
-.slick-center {
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    transform: scale(1.2);
-}
+    .slick-arrow:hover {
+    background-color: #2cccff;
+    color: white;
+    }
+    .slick-prev {
+    left: 5%;
+    }
+    .slick-next {
+    right: 5%;
+    }
 
 .famous_tours-title{
     text-align: center;
     margin-top: 100px;
 }
 
-/* .famous_tours-title h2{
-    font-weight: 700;
-    font-size: min(5vw,30px);
-    letter-spacing: 4.09px;
-    color: #ef5222;
-    text-transform: uppercase;
-} */
-
-.famous_tour-item{
-    margin: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    transition: transform .4s ease 0s;
-}
-
-/* .famous_tour-item:hover{
-    transform: scale(1.05);
-    cursor: pointer;
-} */
-
-.famous_tour-item img{
-    background-color: transparent;
-    height: 300px;
-    object-fit: cover;
-    max-width: 100%;
-    border: 0px solid transparent;
-    border-radius: 8px;
-    box-shadow: 0 2px 50px -6px rgb(62, 56, 56);
-}
-
-.famous_tour-item p{
-    font-size: 15px;
-    margin-bottom: 10px;
-    color: #dce1e6;
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    text-shadow: 4px 4px 10px gray;
-}
-
-
 /* Footer */
-
 
 .footer {
     border-top: 0.5px solid hsla(0,0%,59.2%,.5);
@@ -605,8 +572,6 @@ right: 25%;
 .container-one h1 a:hover {
     color: #d88c75;
 }
-
-
 
 .container-one a{
     margin-top: 16px;
@@ -710,18 +675,6 @@ right: 25%;
     color: #637280;
 }
 
-.footer-two {
-    display: flex;
-}
-
-.footer-two div {
-    padding-right: 15px;
-}
-
-.footer-two img {
-    width:100%
-}
-
 .footer-three {
     border-top: 1px solid rgba(81, 79, 79, 0.5);
     color: #637280;
@@ -733,4 +686,147 @@ right: 25%;
 .footer-three p{
     padding-top: 20px;
     padding-bottom: 30px;
+}
+
+.fixed{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    background-color: rgba(255,255,255,0.95);
+    color: #222222;
+    animation: leave_header 0.2s 0s;
+}
+
+.bg_left{
+    z-index: -100;
+    animation: move 1s 0s;
+    background-image: url(/assets/img/bg-left.png);
+    background-repeat: no-repeat;
+}
+
+.left_to_right{
+    animation: left_to_right 1s 0s;
+}
+
+.right_to_left{
+    animation: right_to_left 1s 0s;
+}
+
+/* New slider 2 */
+.famous_tours-list{
+    background-image: url("/assets/img/sec_video_tour_bg.jpg");
+    background-repeat: no-repeat;
+    min-height: 530px;
+    display: flex;
+    align-items: center;
+}
+
+.famous_tour-item{
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slick-track{
+    display: flex !important;
+    align-items: center;
+}
+
+.famous_tour-item{
+    margin: 0px 80px;
+}
+
+.famous_tour-item img{
+    /* object-fit: cover; */
+    height: 300px;
+    width: 450px;
+    object-fit: cover;
+    border: none;
+}
+
+/* .famous_tour-item .img{
+    min-width: 490px;
+    min-height: 270px;
+} */
+
+.famous_tour-item .desc p{
+    display: block;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.famous_tour-item .desc{
+    width: 50%;
+}
+
+.famous_tour-item .sub_title{
+    margin: 0 0 30px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.famous_tour-item .title{
+    margin: 0 0 10px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+}
+
+.animate__backInRight{
+    animation: move 0.5s 0s;
+}
+
+@keyframes move{
+    0% {
+    -webkit-transform: translateX(500px) scale(.7);
+    transform: translateX(500px) scale(.7);
+    opacity: .7;
+    }
+    80% {
+    -webkit-transform: translateX(0) scale(.7);
+    transform: translateX(0) scale(.7);
+    opacity: .7;
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    }
+}
+
+@keyframes left_to_right{
+    0%{
+        transform: translateX(-2000px);
+        opacity: 0.1;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes right_to_left{
+    0%{
+        transform: translateX(2000px);
+        opacity: 0.1;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes leave_header {
+    0%{
+        transform: translateY(-90px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
