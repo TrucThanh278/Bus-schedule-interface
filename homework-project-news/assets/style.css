@@ -214,7 +214,7 @@ body, div, p, span {
     content: "";
     position: absolute;
     bottom: -15px;
-    right: -2px;
+    right: 0;
     height: 8px;
     width: 98%;
     background-color: rgba(252,220,211,.95);

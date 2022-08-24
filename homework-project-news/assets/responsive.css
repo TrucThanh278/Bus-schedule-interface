@@ -158,4 +158,28 @@
         width: 100%;
     }
 
+    .sub_img{
+        display: none;
+    }
+
+    .container-hotline{
+        width: 100%;
+    }
+
+    .container-hotline h1{
+        width: 100%;
+        overflow: auto;
+        word-wrap: break-word;
+    }
+
+}
+
+@media (max-width: 285px) {
+    .news_list_item{
+        flex-direction: column;
+    }
+
+    .news_list_item--img{
+        width: 100%;
+    }
 }
