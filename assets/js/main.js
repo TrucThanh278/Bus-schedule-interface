@@ -55,36 +55,7 @@ $('.famous_tours-list').slick({
   ]
 });
 	
-
-
-// $('.famous_tours-list').slick({
-//     centerMode: true,
-//     slidesToShow: 5,
-//     autoplay: true,
-//     autoplaySpeed: 2000,
-//     pauseOnHover: false,
-//     prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-//     nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
-//     responsive: [
-//       {
-//         breakpoint: 1023,
-//         settings: {
-//           arrows: false,
-//           centerMode: true,
-//           slidesToShow: 3
-//         }
-//       },
-//       {
-//         breakpoint: 740,
-//         settings: {
-//           arrows: false,
-//           centerMode: true,
-//           slidesToShow: 1
-//         }
-//       }
-//     ]
-//   });
-
+         
   $(".menu").click(function () {
     $menu = $(this);
     $subnavItems = $menu.next();
@@ -95,7 +66,6 @@ $('.famous_tours-list').slick({
     });
 
 });
-
 
 //mobile menu
 var nav = document.getElementById("navjs");

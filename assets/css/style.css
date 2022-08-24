@@ -746,11 +746,6 @@ body, div, p, span {
     border: none;
 }
 
-/* .famous_tour-item .img{
-    min-width: 490px;
-    min-height: 270px;
-} */
-
 .famous_tour-item .desc p{
     display: block;
     text-align: center;
