@@ -13,7 +13,7 @@ if (scroll_position > 91)  {
     if (scroll_position<=91){
       header_fix.classList.remove('fixed');
     }
-    if (scroll_position>400){
+    if (scroll_position>200){
       for( let i = 0; i < evenitems.length ; i++){
         evenitems[i].style.display = "flex";
         evenitems[i].classList.add('left_to_right')
