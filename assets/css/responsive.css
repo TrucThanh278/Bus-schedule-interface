@@ -261,4 +261,14 @@
     .sub_img{
         display: none;
     }
+
+    .container-hotline{
+        width: 100%;
+    }
+
+    .container-hotline h1{
+        width: 100%;
+        overflow: auto;
+        word-wrap: break-word;
+    }
 }
