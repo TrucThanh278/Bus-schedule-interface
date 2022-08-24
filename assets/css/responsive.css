@@ -214,20 +214,12 @@
 
     .container-row-item{
         display: flex;
+        margin: unset;
     }
 
     .famous_tour-item img{
         max-height: 80%;
     }
-
-    /* .famous_tour-item{
-        max-width: 720px;
-    }
-
-    .famous_tour-item img{
-        
-    } */
-
 
     .slick-next ,.slick-prev{
         display: none !important;
@@ -264,5 +256,9 @@
 
     .famous_tour-item .sub_title {
         text-transform: none;
+    }
+
+    .sub_img{
+        display: none;
     }
 }
