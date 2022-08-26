@@ -61,25 +61,6 @@ window.addEventListener ('load', function(){
         dots: true,
         nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
         
-    })
-
-
-    //nav 
-    // document.addEventListener('scroll', () => {
-    //     var scroll_position = window.scrollY;
-    //     var header_fix = document.getElementById('subnavjs')
-    //     if (scroll_position > 102) {
-    //     header_fix.classList.add('fixed');
-    //     } else {
-    //     header_fix.classList.remove('fixed');
-
-    //     //     header.style.backgroundColor = 'transparent';
-    //     // header.style.top = 0;
-    //     // header.style.right = 0;
-    //     // header.style.left = 0;
-    //     }
-    // })
-
-     
+    })     
 })
 
