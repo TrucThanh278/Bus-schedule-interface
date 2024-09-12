@@ -4,20 +4,18 @@ This project describes the interface for bus ticket booking.
 
 ## Pages already built in the project
 
-- Homepage interface
+-   Homepage interface
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="https://github.com/user-attachments/assets/dbd29dfe-113a-4f68-ace9-3fd2c1be568b" width="30%">
-  <img src="https://github.com/user-attachments/assets/767bcc57-ef34-4eb3-9977-b92e2235308e" width="30%">
-  <img src="https://github.com/user-attachments/assets/408fedf7-2fe4-4704-b451-d40e4bac2f3d" width="30%">
-</div>
-
-<div>
-  <img src="https://github.com/user-attachments/assets/950d3216-d1c3-4d14-ad5f-7be435bd2265" width="30%">
-  <img src="https://github.com/user-attachments/assets/55e8d8b4-6ce2-44f8-a997-1f5d9cd0c61c" width="30%">
+  <img src="./images/homepage1.png" width="30%">
+  <img src="./images/homepage2.png" width="30%">
+  <img src="./images/homepage3.png" width="30%">
+  <img src="./images/homepage4.png" width="30%">
+  <img src="./images/homepage5.png" width="30%">
 </div>
 
 ## Calendar interface
+
 <div style="display: flex; justify-content: space-between;">
    <img src="https://github.com/user-attachments/assets/525b933f-3761-4aff-82d7-fa2447ee21c2" width="30%">
    <img src="https://github.com/user-attachments/assets/292c293e-b79b-49e0-852d-ddc8e0814365" width="30%">
@@ -32,8 +30,8 @@ This project describes the interface for bus ticket booking.
    <img src="https://github.com/user-attachments/assets/b13028c7-1362-4785-baf7-58e68eced210" width="30%">
 </div>
 
-
 ## Recruitment interface
+
 <div style="display: flex; justify-content: space-between;">
    <img src="https://github.com/user-attachments/assets/bc7ede8d-7187-4d7b-9cd1-8027f4fbf9f3" width="30%">
    <img src="https://github.com/user-attachments/assets/8bfc611e-21d5-48f8-90bb-fce75f6189ac" width="30%">
